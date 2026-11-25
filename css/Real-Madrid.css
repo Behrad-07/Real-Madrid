@@ -1,0 +1,317 @@
+/* Real Madrid About */
+
+body {
+    text-align: center;
+    background-color: #10182b;
+    color: white;
+
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    border-bottom: solid gold;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: gold;
+}
+
+.top-links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 18px;
+    background-color: gold;
+}
+
+.top-links a {
+    color: navy;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.stadium {
+    width: 80%;
+    height: 400px;
+    margin-top: 25px;
+    border: 4px solid gold;
+    border-radius: 10px;
+}
+
+h2 {
+    color: gold;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 20px 10%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 30px;
+}
+
+.info div {
+    background-color: navy;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 20px 50px;
+    min-width: 120px;
+}
+
+.info h3 {
+    color: gold;
+}
+
+.info p {
+    color: white;
+    margin: 10px;
+}
+
+.logo {
+    width: 140px;
+    height: 150px;
+}
+
+/* players*/
+
+.player-card {
+    width: 245px;
+    position: relative;
+}
+
+.player-card summary {
+    display: block;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.player-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.player-card img {
+    width: 100%;
+    height: 324px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid #251044;
+    box-shadow: 0 0 12px #42106b;
+}
+
+.stats {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.player-card:hover img {
+    filter: brightness(35%);
+}
+
+.player-card:hover .stats {
+    opacity: 1;
+}
+
+.stats h2 {
+    color: gold;
+    font-size: 21px;
+}
+
+.stats p {
+    font-size: 17px;
+    margin: 8px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+
+
+/*Trophys*/
+
+
+
+.trophy-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: navy;
+    margin-bottom: 20px;
+    padding: 20px;
+    min-height: 140px;
+    border-radius: 15px;
+
+    border: 2px solid gold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+}
+
+.trophy {
+    width: 85px;
+    height: 115px;
+    object-fit: contain;
+}
+
+.number {
+    font-size: 65px;
+    color: white;
+
+}
+
+.things h2 {
+    font-size: 20px;
+    color: #071b49;
+}
+
+/* Phone */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .top-links {
+        gap: 20px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .top-links a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 100px;
+    }
+
+    .stadium {
+        width: 95%;
+        height: 220px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 15px 5%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 20px 10px;
+    }
+
+    .info div {
+        width: 90%;
+        min-width: 0;
+        padding: 15px;
+    }
+
+    .player-section {
+        margin: 10px;
+    }
+
+    .player-section h3 {
+        font-size: 24px;
+    }
+
+    .row {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .row img {
+        width: 43%;
+        height: auto;
+    }
+
+    .img-text {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .Banner img {
+        height: 120px;
+    }
+
+    .section-title {
+        margin: 20px;
+        font-size: 24px;
+    }
+
+    .trophy-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    .trophy {
+        width: 70px;
+        height: 90px;
+    }
+
+    .number {
+        font-size: 45px;
+    }
+
+    .things h2 {
+        font-size: 18px;
+    }
+
+}
+
+
+
+
